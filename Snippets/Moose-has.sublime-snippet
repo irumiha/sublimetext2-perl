@@ -1,0 +1,18 @@
+<snippet>
+    <content>
+<![CDATA[has ${1:attrname} => (
+    ${2:is       => '${3:ro or rw}',}
+    ${4:isa      => '${5:type}',}
+    ${6:required => ${7:0 or 1},}
+    ${8:default  => ${9:value or sub},}
+    ${10:reader   => '${11:reader name}',}
+    ${12:writer   => '${13:writer name}'}
+);]]>
+    </content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>.ha</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.perl</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Moose has</description>
+</snippet>

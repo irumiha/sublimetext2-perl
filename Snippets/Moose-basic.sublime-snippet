@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[package ${1:Fully::Qualified::ClassName};
+use Moose;
+
+$0
+
+no Moose;
+
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+]]>
+    </content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>.moo</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.perl</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Moose basic class</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[extends qw[ ${1:class names...} ];]]>
+    </content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>.ex</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.perl</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Moose extends</description>
+</snippet>

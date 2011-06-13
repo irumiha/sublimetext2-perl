@@ -1,0 +1,15 @@
+<snippet>
+    <content>
+<![CDATA[after '${1:methodname}' => sub {
+    my \$self = shift;
+    print "Running after $1\n";
+    $0
+};]]>
+    </content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>.aft</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.perl</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Moose method: after</description>
+</snippet>

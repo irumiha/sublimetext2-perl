@@ -1,0 +1,21 @@
+<snippet>
+    <content>
+<![CDATA[around '${1:methodname}' => sub {
+    my \$orig = shift;
+    my \$self = shift;
+
+    $0
+    print "I'm around foo (code before method)\n";
+
+    \$self->\$orig(@_);
+
+    print "I'm still around foo (code after method)\n";
+};]]>
+    </content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>.ar</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.perl</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Moose method: around</description>
+</snippet>
