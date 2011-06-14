@@ -1,0 +1,4 @@
+[
+    { "keys": ["ctrl+shift+h"], "command": "help_for_word" },
+    { "keys": ["ctrl+shift+k"], "command": "perldoc_for_word" }
+]
