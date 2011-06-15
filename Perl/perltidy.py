@@ -52,13 +52,6 @@ class PerlTidyCommand(sublime_plugin.TextCommand):
 			cmd = ["perl", sublime.packages_path() + "/Perl/perltidy"]
 			# print "using packaged PerlTidy", cmd
 
-		cmd += [
-			"-w", # report all errors and warnings
-			"-se" # send error message to stderr rather than filename.err
-		]
-
-		cmd += self.PrettyPrintingParams # add pretty printing parameters
-
 		p = subprocess.Popen(
 			cmd,
 			shell   = True,
