@@ -75,7 +75,9 @@ class PerlTidyCommand(sublime_plugin.TextCommand):
 			results = self.view.window().new_file()
 			results.set_scratch(results.buffer_id())
 			results.set_name("PerlTidy error output")
-			results.insert(0, error)
+			e = results.begin_edit()
+			results.insert(e, 0, error)
+			results.end_edit(e)
 
 	def isEnabled(self, args):
 		# enabled for Perl and Plain text files, with at most 1 selection region
