@@ -14,7 +14,7 @@ class PerldocForWordCommand(sublime_plugin.TextCommand):
     tab.set_scratch(_id)
     tab.settings().set("gutter", True)
     tab.settings().set("line_numbers", False)
-    tab.set_syntax_file("Packages/Markdown/Markdown.tmLanguage")
+#    tab.set_syntax_file("Packages/User/MoinMoin.tmLanguage")
     ed = tab.begin_edit()
     tab.insert(ed, 0, text)
     tab.end_edit(ed)
@@ -66,7 +66,7 @@ class PerldocForWordCommand(sublime_plugin.TextCommand):
         s = self.view.substr(region)    
       r = ""
       if s in funclist:
-        r = commands.getoutput("perldoc -u -f %s | pod2markdown" % s)
+        r = commands.getoutput("perldoc -t -T -w width:90 -f %s " % s)
       else:
-        r = commands.getoutput("perldoc -u %s | pod2markdown" % s)
+        r = commands.getoutput("perldoc -t -T -w width:90 %s" % s)
       self.showdoc(s,r.decode("utf-8"))

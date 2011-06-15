@@ -1,3 +1,4 @@
 [
-    { "keys": ["alt+k"], "command": "perldoc_for_word" }
+    { "keys": ["alt+k"], "command": "perldoc_for_word" },
+    { "keys": ["ctrl+alt+t"], "command": "perl_tidy" }
 ]
