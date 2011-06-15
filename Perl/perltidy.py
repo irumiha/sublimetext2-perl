@@ -18,6 +18,7 @@ class PerlTidyCommand(sublime_plugin.TextCommand):
 
 	# Pretty printing parameters, customize to your liking
 	PrettyPrintingParams = [
+		"-se",		# Print errors on standard error
 		"-sbl",     # open sub braces on new line
 		"-bbt=1",   # add only some spaces in single-line curly braces
 		"-pt=2",    # dont add spaces inside parenthesis
